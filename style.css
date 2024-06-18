@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    background:#232323;
+}
+body{
+    color: #d2d2d2;
+    
+}
+a{
+    text-decoration: none;
+}
+#main_text1{
+    color:#c9c9c9;
+    font-size: 39px;
+}
+#main_text2{
+    margin: 0 auto;    
+    background:rgba(177,73, 225,0.77);
+    color:#eaeaea;
+    font-size: 33px;
+    padding: 8px 0;
+    max-width: 190px;
+    margin-top: 48px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#main_text2:hover{
+    background:rgb(121, 55, 152);
+    
+    
+    
+}
+
+
+
+#main_block{
+    position: relative;
+    height: 60vh;
+    margin-top:40vh;
+    text-align: center;
+    
+}
+
+/*ПеЧАТЬ*/
+
+
+#textblock{
+    margin-top: 33vh;
+}
+#textblock_words{
+    font-size: 30px;
+    max-width: 60%;
+    margin: 0 auto;  
+    color:#8a8a8a;  
+}
+#block_count{
+    cursor: pointer;
+    width: 168px;
+    
+    background:#3b3b3b;
+    display: flex; 
+    flex-direction:row;
+    
+    margin: 40px auto;
+    justify-content: center;
+}
+.count_of_wrds{
+    color:#d1d1d1;
+    background:#3b3b3b;
+    font-size: 16px;
+    transition: 0.3s;
+}
+#reset_btn{
+    padding-left: 10px;
+}
+
+.count_of_wrds:hover{
+    background: #5a5a5a;
+    color:#ffffff;
+}
+
+.count_of_wrds input{
+    display: none;
+    cursor: pointer;
+}
+
+.count_of_wrds label{
+    cursor:pointer;
+    background-color: #3b3b3b;
+    user-select: none;
+    padding: 6px 12px;
+    transition: .3s;
+
+}
+.count_of_wrds:hover{
+    background-color:#5a5a5a;
+}
+.count_of_wrds label:hover{
+    background-color:#5a5a5a;
+    color:#ffffff;
+}    
+.count_of_wrds input[type=radio]:checked + label{
+    background: #5a5a5a;
+    color:#fff;
+
+}
+
+#statistick{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+#statisic_records{ 
+    /* margin-left: 100px; */
+    width: 310px;
+    margin-left: -100px;
+    /* margin-right: 320px; */
+    
+}
+.statistic_value{
+    display: flex;
+}
+.statistic_word{
+    background:#ffffff;
+    display: flex;
+    color:black;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    align-items:center;
+    justify-content: center;
+    margin-left: 30px;
+    
+}
+.statistic_count{
+    font-size: 20px;
+    display: flex;
+    align-items:center;
+    margin-left: 16px;
+
+}
+#statistic_records_logo{
+    margin-right: 80px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 24px;
+    color:rgba(151, 104, 173, 0.999);
+}
+
+
+
+
+
+#statistic_average_data{
+    width: 310px;
+   
+}
+
+#statisic_data_logo{
+    
+    color:rgba(151, 104, 173, 0.999);
+    font-size: 22px;
+    margin-bottom: 18px;
+    
+}
+#statistic_average_data p{
+    
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#words1{
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.correct {
+    color:rgb(218, 218, 218);
+}
+.incorrect {
+    color:rgb(232, 83, 83);
+}
+#inputfield {
+    z-index: -10;
+    opacity: 0;
+    position: absolute;
+}
+
+/*РЕЗУЛЬТАт*/
+
+#statistic_popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    background-color:#232323;
+    top:0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+#statistic_popup:target{
+    opacity: 0;
+    visibility: hidden;
+}
+#statistic_popup_logo{
+    font-size:22px
+}
+#statistic_popup_main_info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 300px;
+    justify-content: space-between;
+}
+#statistic_popup_wpm{
+    display: flex;
+    margin-top: 5px;
+}
+#statistic_popup_word{
+    background:#ffffff;
+    display: flex;
+    color:black;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    align-items:center;
+    justify-content: center;
+    
+    
+}
+#statistic_popup_count{
+    font-size: 20px;
+    display: flex;
+    align-items:center;
+    margin-left: 16px;
+}
+#statistic_popup_mistakes{
+    font-size:18px;
+    line-height:32px;
+}
+#statistic_popup_wpm_reset{
+    display:flex;
+    flex-direction:column;
+}
+#statistic_popup_reset{
+    margin-top:50px;
+}
+
+.statistic_last_wpm_logo{
+    color:rgba(151, 104, 173, 0.999);
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.statistic_last_wpm_value{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-right: 20px;
+}
+.statistic_last_wpm_value_frst{
+    display:flex;
+    flex-direction: column;
+}

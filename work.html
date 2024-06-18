@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавиатурный тренажер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="textblock">
+        <input type="text" id="inputfield" autocomplete="off">
+        <div id="textblock_words">
+            
+        </div>
+    </div>
+    <div id="block_count">
+        <div class="count_of_wrds">
+            <input id="radio_1" type="radio" name="radio" value="10">
+            <label for="radio_1">10</label>
+        </div>
+        <div class="count_of_wrds">
+            <input id="radio_2" type="radio" name="radio" value="25" checked>
+            <label for="radio_2">25</label>
+        </div>
+        <div class="count_of_wrds">
+            <input id="radio_3" type="radio" name="radio" value="50">
+            <label for="radio_3">50</label>
+        </div>
+        <div class="count_of_wrds">
+            <input id="radio_4" type="radio" name="radio" value="100">
+            <label for="radio_4">100</label>
+        </div>
+        <div id="reset_btn"><img src="pictures/resedt.png" height="20px"></div>
+    </div>
+    <div id="statistick">
+        <div id="statisic_records">
+            <div id="statistic_records_logo">
+                Рекорд:
+            </div>
+            <div class="statistic_value">
+                <div class="statistic_word">
+                    WPM
+                </div>
+                <div class="statistic_count" id="statisic_record_ls">
+                   0
+                </div>
+            </div>
+        </div>
+        <div id="statistic_average_data">
+            <div id="statisic_data_logo">
+                Средние значения:
+            </div>
+            <div id="words1">
+                <p>Слов в минуту: <span id="averageData">0</span></p>
+                <p>Ошибки: <span id="averageMistakes">0</span>%</p>
+            </div>
+        </div>
+        <div class="statisic_last_wpm">
+            <div class="statistic_last_wpm_logo">
+                Последие значения:
+            </div>
+            <div class="statistic_last_wpm_value">
+                <div class="statistic_last_wpm_value_frst" id="last_wpm">
+                </div>
+                <div class="statistic_last_wpm_value_scnd">
+                    <p>WPM</p> 
+                    <p>WPM</p>
+                    <p>WPM</p>
+                    <p>WPM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="statistic_popup">
+        <div id="statistic_popup_logo">
+            Ваш результат:
+        </div>
+        <div id="statistic_popup_main_info">
+            <div id="statistic_popup_wpm_reset">
+                <div id="statistic_popup_wpm">
+                    <div id="statistic_popup_word">
+                        WPM
+                    </div>
+                    <div id="statistic_popup_count">
+                        0
+                    </div>
+                </div>
+                <div id="statistic_popup_reset">
+                    <a href=""><img src="pictures/resedt.png" alt="Пройти тест заново" width="30px" title="Пройти тест заново"></a>
+                </div>
+            </div>
+            <div id="statistic_popup_main_info_mistakes">
+                <div id="statistic_popup_mistakes">
+                    Ошибки: <span id="mistakes_result"></span> %
+                    <p>Время: <span id="time_result">0</span> с</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
