@@ -1,1 +1,2 @@
-*.js linguist-language=JavaScript
+app/* linguist-documentation=false
+app/* linguist-vendore
